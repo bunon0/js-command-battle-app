@@ -1,0 +1,90 @@
+body {
+	background-color: #333;
+	color: #fff;
+	width: 700px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+div {
+	background-color: black;
+}
+
+#parameterView {
+	display: inline-block;
+	width: 520px;
+	text-align: left;
+	margin: 20px 0 0 0;
+	padding: 8px 0 10px 20px;
+	border: 3px solid;
+	border-color: white;
+	border-radius: 6px;
+}
+
+.parameter {
+	display: inline-block;
+	width: 100px;
+	vertical-align: top;
+}
+
+#enemyImageView {
+	display: inline-block;
+	width: 400px;
+	height: 240px;
+	margin: 5px 0 5px 0;
+}
+
+#commandView {
+	display: inline-block;
+	width: 108px;
+	height: 150px;
+	text-align: left;
+	vertical-align: top;
+	margin: 0 0 20px 0;
+	padding: 10px 20px 10px 10px;
+	border: 3px solid;
+	border-color: white;
+	border-radius: 6px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#messageView {
+	display: inline-block;
+	width: 370px;
+	height: 150px;
+	text-align: left;
+	vertical-align: top;
+	margin: 0 0 20px 4px;
+	padding: 10px 0px 10px 20px;
+	border: 3px solid;
+	border-color: white;
+	border-radius: 6px;
+}
+
+#attackCommand:hover,
+#recoveryCommand:hover,
+.enemyCommand:hover {
+	cursor: pointer;
+}
+
+#attackCommand::before,
+#recoveryCommand::before,
+.enemyCommand::before {
+	content: '▶';
+	opacity: 0;
+}
+
+#attackCommand:hover::before,
+#recoveryCommand:hover::before,
+.enemyCommand:hover::before {
+	opacity: 100;
+}
+
+#friendName::before {
+	content: '▶';
+	opacity: 0;
+}
